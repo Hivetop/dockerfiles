@@ -1,6 +1,6 @@
 FROM rust:alpine
 
-RUN apk add --update build-base npm
+RUN apk add --update build-base npm tar
 
 RUN rustup target add wasm32-unknown-unknown
 RUN rustup default nightly
